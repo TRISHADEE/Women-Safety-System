@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f5fa;
+    color: #292333;
+}
+
+
+/* HEADER */
+
+.topbar {
+    background: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.shield {
+    font-size: 42px;
+}
+
+.brand h1 {
+    font-size: 24px;
+}
+
+.brand p {
+    color: #777;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #6d3b8f;
+    border: 1px solid #d9c7e4;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+    width: 86%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+
+/* WELCOME */
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.small-text {
+    color: #8b5aa8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.welcome-text {
+    color: #777;
+}
+
+.safe-badge {
+    background: #eaf8ef;
+    color: #218642;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* SOS */
+
+.sos-card {
+    background: linear-gradient(135deg, #7b315f, #a24b7c);
+    color: white;
+    padding: 32px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 10px 30px rgba(123,49,95,0.25);
+}
+
+.sos-icon {
+    font-size: 55px;
+}
+
+.sos-content h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.sos-content p {
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.sos-button {
+    display: inline-block;
+    background: white;
+    color: #8b315f;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+/* SECTION */
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 23px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #292333;
+    position: relative;
+    transition: 0.2s;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+}
+
+.dashboard-card:hover {
+    transform: translateY(-4px);
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+.purple {
+    background: #eee5f5;
+}
+
+.red {
+    background: #fde8ec;
+}
+
+.orange {
+    background: #fff0dc;
+}
+
+.dashboard-card h3 {
+    margin-bottom: 8px;
+}
+
+.dashboard-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.arrow {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 22px;
+    color: #9b70ae;
+}
+
+
+/* SAFETY TIP */
+
+.safety-tip {
+    background: #fff8e8;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.tip-icon {
+    font-size: 28px;
+}
+
+.safety-tip h3 {
+    margin-bottom: 5px;
+}
+
+.safety-tip p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #888;
+    font-size: 13px;
+}
+
+footer span {
+    margin: 0 8px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .sos-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topbar {
+        padding: 15px 5%;
+    }
+
+    .dashboard {
+        width: 90%;
+    }
+}

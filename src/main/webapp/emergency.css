@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff1f3, #f7eaf4);
+    min-height: 100vh;
+    color: #292333;
+    padding: 30px;
+}
+
+.emergency-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.header {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.header .icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    color: #7b315f;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #777;
+}
+
+.sos-box {
+    background: linear-gradient(135deg, #7b315f, #a24b7c);
+    color: white;
+    padding: 40px;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(123, 49, 95, 0.25);
+    margin-bottom: 25px;
+}
+
+.sos-box h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.sos-box p {
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.sos-button {
+    display: inline-block;
+    background: white;
+    color: #7b315f;
+    text-decoration: none;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sos-button:hover {
+    background: #f8e8f0;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+    color: #6d3b8f;
+}
+
+.info-card p {
+    color: #777;
+    line-height: 1.6;
+}
+
+.back {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #7b315f;
+    text-decoration: none;
+    font-weight: bold;
+}
